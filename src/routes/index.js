@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-  const login = req.query.login; // grabs it from URL
+  const login = req.query.login; 
   if (login === "kurenkov.maxim3000@icloud.com")
     return res.render("moodleLogin");
   else {
